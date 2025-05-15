@@ -1,0 +1,30 @@
+@keyframes slide-in {
+    from { bottom: -60px; }
+    to { bottom: 38px; }
+}
+
+@keyframes slide-out {
+    from { bottom: 38px; }
+    to { bottom: -60px; }
+}
+
+#strap {
+    font-size: 38px;
+    position: absolute;
+    bottom: 38px;
+    left: 0px;
+    background: darkred;
+    width: 100%;
+    animation-name: slide-in;
+    animation-duration: 1s;
+}
+
+#strap-header {
+    padding-left: 300px;
+}
+
+#strap.hidden {
+    bottom: -60px;
+    animation-duration: 1s;
+    animation-name: slide-out;
+}
